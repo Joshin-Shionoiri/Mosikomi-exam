@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>検定お申し込みサイト</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background: #f7f7f7;
+        }
+        .logo-area {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo-area img {
+            max-width: 260px;
+            height: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        label {
+            font-weight: 600;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            background: #fff;
+        }
+        button {
+            background: #1a73e8;
+            color: #fff;
+            padding: 12px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="logo-area">
+    <img src="スクリーンショット 2026-02-14 211901.png" alt="ロゴ">
+</div>
+
+<h2>国際学習能力検定　お申し込みサイト</h2>
+
+<form action="https://formspree.io/f/mreyjnqr" method="POST">
+
+    <label>お名前</label>
+    <input type="text" name="name" required>
+
+    <label>メールアドレス</label>
+    <input type="email" name="_replyto" required>
+
+    <label>受験級</label>
+    <input type="text" name="subject">
+
+    <label>住所</label>
+    <textarea name="message" rows="6" required></textarea>
+
+    <!-- ▼ 個人情報保護方針の同意チェック ▼ -->
+    <label style="display:flex; align-items:center; gap:8px; margin-bottom:20px;">
+        <input type="checkbox" name="privacy" required>
+        <span>
+            <a href="https://www.joshin-juku.com/個人情報について" target="_blank">
+                個人情報保護方針
+            </a>
+            に同意します
+        </span>
+    </label>
+    <!-- ▲ ここまで ▲ -->
+
+    <div class="center">
+        <button type="submit">送信する</button>
+    </div>
+
+</form>
+
+</body>
+</html>
